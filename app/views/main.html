@@ -1,11 +1,11 @@
 <div ng-controller="BlogCtrl">
   <div class="header">
     <ul class="nav nav-pills pull-right">
-      <li ng-class="{active: $index == selectedIndex}" ng-repeat="author in authors" ng-click="navigationClick($event, $index, author)"><a ng-href="#">{{author}}</a></li>
+      <li ng-class="{ active: $index == selectedIndex }" ng-repeat="author in authors" ng-click="navigationClick($index, author)"><a ng-href="#">{{author}}</a></li>
     </ul>
     <h3 class="text-muted">stooge bloggerz</h3>
   </div>
-  <input type="text" placeholder="Filter posts by author" ng-model="search.author">
+  <!-- <input type="text" placeholder="Filter posts by author" ng-model="search.author"> -->
   <div class="blog">
     <header>Latest Posts</header>
     <ul>
